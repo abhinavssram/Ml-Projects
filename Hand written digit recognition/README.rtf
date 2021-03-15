@@ -1,0 +1,40 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww33400\viewh21000\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\qc\partightenfactor0
+
+\f0\fs48 \cf0 NEURAL NETWORK IN PYTHON\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs32 \cf0 \
+Description : A flexible neural network built in python without using any advanced libraries(Except Numpy)\
+\
+Code module : There are 4 parts in the code. They are : 1. Extracting data from csv files and giving inputs \
+												             2. Definition of sigmoid function and its derivative\
+											                   3. Creating Neural Network class\
+												             4. Main class\
+\
+Working : \
+\
+1.Extracting data from csv files and giving inputs \
+In this the MNIST data is read from csv file and creates a \'91X\'92 vector which has the pixel values and \'91Y\'92 vector which has corresponding label values.\
+Here for easy calculation I Normalised \'91x\'92 vector. For each different label I created a 0,1 vector for example, for label 5 - [0 0 0 0 1 0 0 0 0] . After the vector is created for each x(i)\'92s corresponding y(i) label ,there are \
+Combined into single vector . \
+\
+2.Definition of sigmoid function and its derivative\
+In this part  definition for sigmoid function and it\'92s derivative is written.\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 3. Creating  Neural Network class\
+\
+This is the core of  the program.It contains different function definitions\
+a. Initialise - To initialise class variables\
+b. Iniweigths - to initialise weights that need to be multiplied with input values at each layer.\
+c. feedandback - It can be divide further into two parts. In the first part the input values are relied at first input layer, they are multiplied with weight matrix to get a output which is further sent\
+				   into sigmoid function to activate the next layer neuron. Now this output is the input for next layer so the above process is continued until you reach the last layer.THis is called Forward propagation.\
+			         In second part output received at last of forward propagations is checked actual y labels by calculating error of the layer, call it \'93layer\'92s error\'94.After calculating layer\'92s error , we find the amount by which weights\
+                            Should change.so we incorporate this change in weights by multiplying with learning rate and continue this above process at each layer untill we reach to first layer.\
+d. Main class - contains the statements required to use the above neural networks.\
+				   }
